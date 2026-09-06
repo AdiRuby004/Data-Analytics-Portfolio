@@ -136,7 +136,7 @@ The dashboard brings together operational, financial, vehicle, location, and cus
 
 ### Dashboard Preview
 
-![Uber Trip Analysis Dashboard](images/uber_dashboard.png)
+![Uber Trip Analysis Dashboard](images/uber_analysis_dashboard.png)
 
 ---
 
