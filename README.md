@@ -1,16 +1,32 @@
 # 📊 Adithya Ruby — Data Analytics Portfolio
 
-Welcome to my **Data Analytics Portfolio**.
+<p align="center">
+  <b>Turning raw data into business insights through SQL, Python, Power BI, and analytical storytelling.</b>
+</p>
 
-I use **SQL, Python, Power BI, Excel, and data visualization** to turn raw data into meaningful insights, answer business questions, and build practical analytical solutions.
+<p align="center">
+  <a href="https://github.com/AdiRuby004/Airbnb-Global-Performance">Airbnb</a> •
+  <a href="https://github.com/AdiRuby004/Customer-Shopping-Behavior">Customer Shopping</a> •
+  <a href="https://github.com/AdiRuby004/Uber-Trip-Analysis">Uber</a>
+</p>
 
-My projects focus on **business-oriented data analysis, customer behaviour, marketplace performance, operational analytics, and business intelligence**.
+---
+
+## 👋 About Me
+
+I'm a **Computer Science Graduate focused on Data Analytics and Business Intelligence**, with hands-on experience working across data preparation, SQL analysis, Python, Power BI, DAX, and data visualization.
+
+My projects are built around practical business questions — not just creating charts — with an emphasis on identifying patterns, quantifying findings, and translating analysis into potential business actions.
+
+### 🎯 Target Roles
+
+**Data Analyst · Business Analyst · BI Analyst · Business Analytics**
 
 ---
 
 ## 🧰 Technical Skills
 
-### Programming & Data Analysis
+### Data Analysis & Programming
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
@@ -30,187 +46,200 @@ My projects focus on **business-oriented data analysis, customer behaviour, mark
 
 ---
 
-# 📚 Featured Projects
+# ⭐ Featured Projects
 
-## 🏠 [Airbnb Global Performance](https://github.com/AdiRuby004/Airbnb-Global-Performance)
+## 🏠 Airbnb Global Performance
 
 **Power BI · DAX · Power Query · Excel**
 
-An interactive marketplace analytics project analyzing **279K+ listings, 182K+ hosts, 144 property types, 10 cities, and 5.3M+ reviews**.
+A marketplace analytics project analyzing **279K+ listings, 182K+ hosts, 144 property types, 10 cities, and 5.3M+ reviews**.
 
-### Dashboard Preview
+![Airbnb Global Performance Dashboard](https://raw.githubusercontent.com/AdiRuby004/Data-Analytics-Portfolio/main/Airbnb%20Global%20Performance/images/overview.png)
 
-![Airbnb Global Performance Dashboard](Airbnb%20Global%20Performance/images/overview.png)
+**Key findings**
+- Airbnb activity is highly concentrated across major cities.
+- **86.5% of reviewers contributed only one review**, while **98.8% contributed three or fewer reviews**.
+- **Mexico City and Rio de Janeiro** lead the analyzed cities on overall ratings, while **Hong Kong and Istanbul** rank comparatively lower.
+- Review activity shows clear seasonal differences across cities.
 
-### Key Areas
+**Key areas**
+- Marketplace and city-level performance
+- Listing and property-type analysis
+- Ratings and review-score analysis
+- Review-frequency and Pareto analysis
+- Host verification and trust analysis
+- Review seasonality
+- Cumulative market-share analysis
 
-- 🌎 Marketplace and city-level performance
-- 🏠 Listing and property-type analysis
-- ⭐ City and review-score analysis
-- 💬 Review-frequency and Pareto analysis
-- 👤 Host verification and trust analysis
-- 📅 Review seasonality
-- 📊 Cumulative market-share analysis
-- 📈 Interactive Power BI dashboard
-
-### Business Questions
-
-- Which cities contribute the largest share of Airbnb listings?
-- Which cities achieve the strongest and weakest ratings?
-- Which rating dimensions require greater attention?
-- How concentrated is reviewer activity?
-- How does review behaviour change across seasons?
-- What patterns can be observed in host verification?
-
-🔗 **[View Project →](https://github.com/AdiRuby004/Airbnb-Global-Performance)**
+🔗 **[View Airbnb Project →](https://github.com/AdiRuby004/Airbnb-Global-Performance)**
 
 ---
 
-## 🛍️ [Customer Shopping Behaviour](https://github.com/AdiRuby004/Customer-Shopping-Behavior)
+## 🛍️ Customer Shopping Behaviour
 
 **Python · Pandas · SQL · PostgreSQL · Power BI**
 
-An end-to-end customer analytics project focused on understanding **purchasing behaviour, customer segments, product performance, discounts, subscriptions, ratings, and purchase frequency**.
+An end-to-end retail analytics project using **3,900 customer records** to analyze purchasing behaviour, customer segments, product performance, discounts, subscriptions, ratings, shipping, and purchase frequency.
 
-### Dashboard Preview
+![Customer Shopping Behaviour Dashboard](https://raw.githubusercontent.com/AdiRuby004/Data-Analytics-Portfolio/main/Customer%20Shopping%20Behavior/images/powerbi_dashboard.png)
 
-![Customer Shopping Behaviour Dashboard](Customer%20Shopping%20Behavior/images/powerbi_dashboard.png)
+**Key findings**
+- **Clothing generated around $100K**, making it the strongest-performing category.
+- **Young Adults generated approximately $62K**, the highest revenue contribution among age groups.
+- Only **27% of customers were subscribers**, leaving a large potential retention/conversion opportunity.
+- SQL analysis was used to examine discounted customers, highly rated products, gender-level revenue, and shipping-type spending.
 
-### Key Areas
+**Key areas**
+- Customer demographics and segmentation
+- Purchasing behaviour and spending
+- Product and category performance
+- Discount and promotional analysis
+- Customer loyalty and purchase frequency
+- Subscription behaviour
+- Ratings and product preferences
+- SQL and PostgreSQL business analysis
+- Interactive Power BI dashboard
 
-- 👥 Customer demographics and segmentation
-- 💰 Purchasing behaviour and spending patterns
-- 🛍️ Product and category performance
-- 🏷️ Discount and promotional impact
-- 🔁 Customer loyalty and purchase frequency
-- ⭐ Ratings and product preferences
-- 💳 Payment and shipping preferences
-- 📊 Interactive Power BI dashboard
-- 🗄️ PostgreSQL and SQL-based business analysis
-
-### Business Questions
-
-- Which customer segments contribute the most revenue?
-- Which products and categories perform best?
-- How does discount usage relate to customer spending?
-- What patterns can be observed among returning and loyal customers?
-- How do subscription, payment, and shipping preferences vary across customers?
-
-🔗 **[View Project →](https://github.com/AdiRuby004/Customer-Shopping-Behavior)**
+🔗 **[View Customer Shopping Project →](https://github.com/AdiRuby004/Customer-Shopping-Behavior)**
 
 ---
 
-## 🚕 [Uber Trip Analysis](https://github.com/AdiRuby004/Uber-Trip-Analysis)
+## 🚕 Uber Trip Analysis
 
 **Power BI · DAX · Power Query · Excel**
 
-An operational analytics project analyzing **Uber bookings, revenue, vehicle performance, trip distance, cancellations, locations, and customer/driver ratings**.
+An operational analytics project analyzing **150K Uber trip records** across bookings, revenue, vehicle types, distance, cancellations, locations, and customer/driver ratings.
 
-### Dashboard Preview
+![Uber Trip Analysis Dashboard](https://raw.githubusercontent.com/AdiRuby004/Data-Analytics-Portfolio/main/Uber%20Trip%20Analysis/images/uber_dashboard.png)
 
-![Uber Trip Analysis Dashboard](Uber%20Trip%20Analysis/images/uber_analysis_dashboard.png)
+**Key findings**
+- **93K completed bookings vs 57K lost bookings** highlight a significant booking-loss opportunity.
+- Total revenue reached approximately **$52M** across the analyzed trips.
+- **Auto generated approximately $13M**, the highest revenue contribution among vehicle types.
+- Average customer rating (**4.40**) was higher than average driver rating (**4.23**).
 
-### Key Areas
+**Key areas**
+- Booking performance and booking status
+- Revenue and booking-value analysis
+- Vehicle-type performance
+- Pickup and drop-off analysis
+- Ride-distance analysis
+- Customer and driver cancellations
+- Customer and driver ratings
+- Monthly and quarterly trends
+- Interactive Power BI dashboard
 
-- 🚕 Booking performance and booking status
-- 💰 Revenue and booking-value analysis
-- 🚗 Vehicle-type performance
-- 📍 Pickup and drop-off location analysis
-- 🛣️ Ride-distance analysis
-- ❌ Customer and driver cancellation analysis
-- ⭐ Customer and driver ratings
-- 📅 Monthly and quarterly trends
-- 📊 Interactive Power BI dashboard
-
-### Business Questions
-
-- What are the major drivers of booking performance?
-- Which vehicle types generate the strongest performance?
-- How do cancellations affect overall operations?
-- Which locations experience higher ride activity?
-- How does trip distance vary across ride categories?
-- What patterns appear in customer and driver ratings?
-
-🔗 **[View Project →](https://github.com/AdiRuby004/Uber-Trip-Analysis)**
+🔗 **[View Uber Project →](https://github.com/AdiRuby004/Uber-Trip-Analysis)**
 
 ---
 
-# 🔎 Analytical Approach
+# 🔎 How I Approach Analytics
 
-Across my projects, I follow a structured analytics workflow:
+Across my projects, I follow a structured workflow:
 
 **Business Question → Data Preparation → Exploration → Analysis → Visualization → Insights → Business Recommendation**
 
-The goal is not only to create dashboards, but to use data to answer practical business questions and communicate findings clearly.
+I focus on connecting technical analysis to the underlying business question and communicating findings in a way that supports decision-making.
 
 ---
 
-# 💡 What My Projects Demonstrate
+# 💡 Business Analytics Strengths
 
-### Data Analysis
-
-- Exploratory data analysis
-- Data cleaning and transformation
-- Feature engineering
+### 📊 Analysis
+- Exploratory Data Analysis
 - Segmentation
+- KPI analysis
 - Trend and seasonality analysis
-- Customer and operational analysis
+- Customer behaviour analysis
+- Operational analysis
+- Market performance analysis
 
-### SQL & Databases
-
-- SQL querying
-- Aggregations and filtering
+### 🗄️ SQL
+- Filtering and aggregation
+- Joins
+- CTEs
+- Subqueries
+- `CASE WHEN`
+- Window functions
 - PostgreSQL
 - MySQL
-- Business-oriented analytical queries
 
-### Power BI & DAX
-
-- Interactive dashboard development
+### 📈 Power BI
 - Data modeling
+- Power Query
+- DAX
 - KPI development
-- DAX measures
-- Ranking and cumulative calculations
+- Interactive dashboards
+- Ranking and cumulative analysis
 - Pareto analysis
-- Dynamic filtering and drill-down analysis
+- Dynamic filtering and drill-downs
 
-### Business Thinking
-
+### 💼 Business Thinking
 - Defining business questions
-- Identifying meaningful KPIs
-- Translating findings into business implications
-- Turning analysis into actionable recommendations
+- Identifying relevant KPIs
+- Quantifying findings
+- Explaining business implications
+- Developing data-backed recommendations
 
 ---
 
 # 🎯 Career Focus
 
-I am interested in **Data Analyst, Business Analyst, BI Analyst, and Business Analytics** roles where I can combine technical analysis with business problem-solving.
+I'm looking for opportunities in **Data Analytics, Business Analysis, Business Intelligence, and related entry-level analytical roles** where I can combine technical skills with business problem-solving.
 
-I enjoy working across the full analytics workflow — from preparing raw data and writing SQL queries to building dashboards and translating findings into clear business recommendations.
+I'm particularly interested in roles where I can work with stakeholders, investigate business questions, analyze data, build reporting solutions, and communicate actionable insights.
 
 ---
 
-# 👨‍💻 About Me
+# 📁 Portfolio Structure
+
+```text
+Data-Analytics-Portfolio/
+│
+├── README.md
+│
+├── Airbnb Global Performance/
+│   ├── README.md
+│   ├── Dashboard/
+│   ├── dataset/
+│   └── images/
+│
+├── Customer Shopping Behavior/
+│   ├── README.md
+│   ├── Power BI/
+│   ├── SQL/
+│   ├── python/
+│   ├── data/
+│   └── images/
+│
+└── Uber Trip Analysis/
+    ├── README.md
+    ├── Power BI/
+    ├── dataset/
+    ├── dashboard/
+    └── images/
+```
+
+---
+
+# 📌 Quick Project Comparison
+
+| Project | Primary Focus | Main Tools |
+|---|---|---|
+| 🏠 Airbnb Global Performance | Marketplace & customer analytics | Power BI, DAX, Power Query |
+| 🛍️ Customer Shopping Behaviour | Retail & customer analytics | Python, SQL, PostgreSQL, Power BI |
+| 🚕 Uber Trip Analysis | Operational analytics | Power BI, DAX, Power Query, Excel |
+
+---
+
+# 👨‍💻 Author
 
 **Adithya Ruby**
 
-**Computer Science Graduate | Data Analytics**
+Computer Science Graduate | Data Analytics
 
-My focus is on using **SQL, Python, Power BI, and Excel** to explore data, identify patterns, and support data-driven decision-making.
-
-I am particularly interested in roles where analytical thinking, business understanding, and communication come together to solve real-world problems.
+**Core Interests:** Data Analytics · Business Intelligence · SQL · Power BI · Business Analysis
 
 ---
 
-# 📌 Portfolio Highlights
-
-| Project | Primary Focus | Key Tools |
-|---|---|---|
-| 🏠 [Airbnb Global Performance](https://github.com/AdiRuby004/Airbnb-Global-Performance) | Marketplace & customer analytics | Power BI, DAX, Power Query |
-| 🛍️ [Customer Shopping Behaviour](https://github.com/AdiRuby004/Customer-Shopping-Behavior) | Customer & retail analytics | Python, SQL, PostgreSQL, Power BI |
-| 🚕 [Uber Trip Analysis](https://github.com/AdiRuby004/Uber-Trip-Analysis) | Operational analytics | Power BI, DAX, Power Query, Excel |
-
----
-
-⭐ **Explore the projects above to see the complete analysis, dashboards, methodology, and business insights.**
+⭐ **Explore the projects above to see the analysis, dashboards, technical implementation, and business insights.**
