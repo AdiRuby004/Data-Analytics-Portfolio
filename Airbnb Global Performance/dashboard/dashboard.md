@@ -1,15 +1,19 @@
 # 📊 Airbnb Global Performance Dashboard
 
-## Power BI Dashboard
+Explore the complete interactive Power BI report below.
 
-Explore the complete interactive Power BI dashboard using the link below.
+## 🔗 Power BI Dashboard
 
-🔗 **[View / Download Power BI Dashboard](https://drive.google.com/file/d/1HuSs8TTBmUzy8C6Tp2DG09vaYdrCmwxH/view?usp=drive_link)**
+**[Open / Download the Power BI Dashboard →](YOUR_GOOGLE_DRIVE_LINK)**
 
-### 📌 Dashboard Pages
+> The `.pbix` file is hosted on Google Drive due to its large file size.
 
-- 🏠 **Overview** — Global listing and marketplace performance
-- ⭐ **Ratings** — City and guest rating analysis
+### Dashboard Pages
+
+- 🏠 **Overview** — Marketplace performance, listing trends, city market share and pricing
+- ⭐ **Ratings** — City-level ratings and individual review-score dimensions
 - 💬 **Reviews** — Review frequency, seasonality and host trust analysis
 
-> **Note:** The `.pbix` file requires **Power BI Desktop** to open and interact with the dashboard.
+### Requirements
+
+The `.pbix` file requires **Power BI Desktop** to open and interact with the report.
