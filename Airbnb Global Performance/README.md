@@ -1,231 +1,143 @@
 # 🏠 Airbnb Global Performance Analysis
 
-![Power
-BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-8A2BE2?style=flat) ![Power
-Query](https://img.shields.io/badge/Power%20Query-217346?style=flat&logo=microsoft&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-8A2BE2?style=flat)
+![Power Query](https://img.shields.io/badge/Power%20Query-217346?style=flat&logo=microsoft&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
 
-------------------------------------------------------------------------
+---
 
-## Overview
+## 01. 📌 Project Overview
 
-This project presents an interactive **Airbnb Global Performance
-Dashboard** developed in Power BI to analyze listing performance, host
-characteristics, customer ratings, and review behaviour across major
-Airbnb markets.
+The **Airbnb Global Performance Analysis** project is an interactive Power BI solution designed to evaluate marketplace performance across **279K+ listings, 182K+ hosts, 144 property types, 10 cities, and 5.3M+ reviews**.
 
-The analysis combines **data preparation, relational data modeling,
-calculated columns, DAX measures, ranking logic, cumulative analysis,
-segmentation, and interactive visualization** to transform large-scale
-Airbnb listing and review data into meaningful business insights.
+The project combines data preparation, relational modeling, calculated columns, DAX measures, ranking, cumulative analysis, segmentation, and interactive visualization to investigate listing performance, guest ratings, host trust, and review behaviour.
 
-The project follows a Power BI-focused analytics workflow:
+**Workflow:**
 
-**Raw Data → Data Preparation → Data Modeling → DAX & Calculations →
-Interactive Dashboard → Business Insights**
+**Raw Data → Data Preparation → Data Modeling → DAX → Dashboard → Insights → Recommendations**
 
-The dashboard analyzes **279K+ listings, 182K+ hosts, 144 property
-types, 10 cities, and 5.3M+ reviews**.
+---
 
-------------------------------------------------------------------------
+## 02. 🎯 Business Problem
 
-## 🎯 Business Objective
+Airbnb operates across multiple markets with different listing characteristics, host profiles, guest experiences, and review behaviours.
 
-The objective of this analysis is to understand Airbnb's marketplace
-performance from multiple perspectives and identify patterns in
-listings, hosts, ratings, and customer engagement.
+This analysis is designed to answer:
 
-The key business questions explored include:
+- Which cities contribute the largest share of listings?
+- How has listing activity changed over time?
+- Which cities perform best and worst on guest ratings?
+- Which rating dimensions are comparatively weaker?
+- How prevalent is host verification?
+- How frequently do customers contribute reviews?
+- How concentrated is reviewer activity?
+- How does review activity change seasonally?
 
--   How has Airbnb's listing volume evolved over time?
--   Which cities contribute the largest share of Airbnb listings?
--   How are listings distributed across different room and property
-    types?
--   Which cities achieve the strongest and weakest guest ratings?
--   Which rating dimensions require greater attention?
--   How do host verification and profile presence contribute to host
-    trust?
--   How frequently do customers leave reviews?
--   How concentrated is reviewer activity among highly active customers?
--   How does review activity vary across different months and seasons?
+---
 
-------------------------------------------------------------------------
+## 03. 📂 Dataset
 
-## 🔄 Project Workflow
+The project uses the **Airbnb Listings & Reviews** dataset from the Maven Analytics Data Playground.
 
-``` text
-                         Raw Airbnb Data
-                                │
-                                ▼
-                       Data Preparation
-                                │
-                                ▼
-                        Data Modeling
-                    ┌────────────────────┐
-                    │      Listings      │
-                    │      Reviews       │
-                    └─────────┬──────────┘
-                              │
-                              ▼
-                       Calculated Fields
-                              │
-                              ▼
-                         DAX Measures
-                              │
-                ┌─────────────┴─────────────┐
-                │                           │
-                ▼                           ▼
-        Performance Analysis         Customer Analysis
-                │                           │
-                └─────────────┬─────────────┘
-                              │
-                              ▼
-                         Power BI
-                    Interactive Dashboard
-                              │
-                              ▼
-                       Business Insights
-```
-
-------------------------------------------------------------------------
-
-# 📂 Dataset
-
-The project uses the **Airbnb Listings & Reviews** dataset provided
-through the Maven Analytics Data Playground.
-
-The dataset contains listing-level, host-level and review-level
-information that enables analysis of Airbnb marketplace performance and
-customer behaviour.
+**Dataset Provider:** Maven Analytics  
+**Original Source:** Inside Airbnb  
+**License:** Public Domain
 
 ### Dataset Highlights
 
--   **279K+ listings**
--   **182K+ hosts**
--   **144 property types**
--   **10 cities**
--   **5.3M+ reviews**
+| Metric | Value |
+|---|---:|
+| Listings | 279,712 |
+| Hosts | 182,024 |
+| Cities | 10 |
+| Property Types | 144 |
+| Reviews | 5.373M+ |
 
-### Main Data Areas
+🔗 **[View Original Dataset →](https://mavenanalytics.io/data-playground/airbnb-listings-reviews)**
 
-  -----------------------------------------------------------------------
-  Area                                Examples
-  ----------------------------------- -----------------------------------
-  Listings                            `listing_id`, `property_type`,
-                                      `room_type`, `price`
+> The original source files are hosted externally because of their large size.
 
-  Hosts                               `host_id`, `host_since`,
-                                      `host_is_superhost`
+---
 
-  Location                            `city`, `district`, `latitude`,
-                                      `longitude`
+## 04. 🧹 Data Preparation
 
-  Reviews                             `review_id`, `reviewer_id`, `date`
+The source data was prepared for analysis by:
 
-  Ratings                             Accuracy, Cleanliness,
-                                      Communication, Location, Rating,
-                                      Value
+- Reviewing and organizing listing and review fields
+- Managing data types
+- Creating date-related analytical fields
+- Creating reviewer-frequency fields
+- Preparing host segmentation fields
+- Structuring data for interactive dashboard analysis
 
-  Booking                             Accommodates, Minimum Nights,
-                                      Maximum Nights
+---
 
-  Host Trust                          Identity Verification, Profile
-                                      Picture
-  -----------------------------------------------------------------------
+## 05. 🧩 Data Model
 
-## Dataset Source
+The Power BI model connects **Listings** and **Reviews** through `listing_id`.
 
-**Dataset Provider:** Maven Analytics Data Playground\
-**Original Source:** Inside Airbnb\
-**License:** Public Domain
-
-🔗 [View Original
-Dataset](https://mavenanalytics.io/data-playground/airbnb-listings-reviews)
-
-> The complete datasets are hosted externally due to their large file
-> sizes.
-
-------------------------------------------------------------------------
-
-## Dataset Preview
-
-![Airbnb Dataset Preview](images/dataset_preview.png)
-
-------------------------------------------------------------------------
-
-# 🧩 Data Model
-
-The Power BI model connects the **Listings** and **Reviews** datasets
-through `listing_id`.
-
-This relational structure allows listing-level attributes to be analyzed
-alongside review-level activity.
-
-The model was designed to support both marketplace-level analysis and
-detailed customer review analysis.
+This relationship enables listing-level attributes such as city, property type, host characteristics, and pricing to be analyzed alongside review-level activity.
 
 ![Power BI Data Model](images/data_model.png)
 
-------------------------------------------------------------------------
+---
 
-# 📐 DAX & Analytical Development
+## 06. 🧮 Calculated Columns
 
-A major component of the project involved developing calculated columns
-and DAX measures to support dynamic analysis within the dashboard.
+The project includes calculated columns for specialized analysis:
 
-The calculations go beyond basic aggregations and include **ranking,
-cumulative analysis, segmentation, percentage calculations, and
-review-frequency analysis**.
+- `Reviews per Reviewer`
+- `Show in Review Frequency Chart`
+- `Review Month`
+- `Month Number`
 
-## Key DAX Areas
+These fields support the review-frequency and seasonality analyses.
 
-### 📊 KPI & Performance Measures
+![Calculated Columns and DAX](images/dax_analysis.png)
 
--   Total Listings
--   Total Hosts
--   Total Reviews
--   Average Price
--   Average Rating
+---
 
-### 🌎 City-Level Analysis
+## 07. 📐 DAX & Analytical Development
 
--   City Rank
--   Cumulative Listings
--   Cumulative %
--   Market share calculations
+The project uses DAX for dynamic KPIs, ranking, segmentation, cumulative calculations, and review analysis.
 
-### 👤 Host Segmentation
+### Key Measure Areas
 
--   Superhost Listings
--   Non-Superhost Listings
--   Verified Hosts
--   Non-verified Hosts
--   Verified/Profile combinations
--   Host trust indicators
+**KPIs**
+- Total Listings
+- Total Hosts
+- Total Reviews
+- Average Price
+- Average Rating
 
-### 💬 Review Analysis
+**City Analysis**
+- City Rank
+- Cumulative Listings
+- Cumulative %
+- Market contribution
 
--   Reviewers
--   Total Reviewers
--   Reviews per Reviewer
--   Cumulative Reviewers
--   Cumulative % Reviews Frequency
--   Monthly review contribution
--   Review seasonality
+**Host Analysis**
+- Superhost Listings
+- Non-Superhost Listings
+- Verified Hosts
+- Non-verified Hosts
+- Profile-picture segmentation
 
-------------------------------------------------------------------------
+**Review Analysis**
+- Total Reviewers
+- Reviews per Reviewer
+- Cumulative Reviewers
+- Cumulative % Reviews Frequency
+- Monthly review analysis
 
-# 🔢 Cumulative & Pareto Analysis
+---
 
-One of the more advanced analytical components of the project is the
-cumulative analysis of reviewer behaviour.
+## 08. 🔢 Advanced Cumulative Analysis
 
-The `Cumulative Reviewers` measure dynamically calculates the number of
-unique reviewers whose review frequency falls within the current
-threshold.
+A cumulative reviewer measure was developed using `DISTINCTCOUNT`, `FILTER`, and `ALL()` to evaluate how reviewer activity accumulates across review-frequency thresholds.
 
-``` dax
+```DAX
 Cumulative Reviewers =
 VAR CurrentReviews =
     MAX(Reviews[Reviews per Reviewer])
@@ -239,22 +151,19 @@ RETURN
     )
 ```
 
-This calculation is then used to determine the cumulative percentage of
-reviewers and visualize the concentration of review activity.
+The resulting cumulative percentage shows:
 
-The analysis shows that approximately **86.5% of reviewers contributed
-only one review**, while approximately **98.8% contributed three or
-fewer reviews**.
+- **86.5%** of reviewers contributed only one review.
+- **98.8%** contributed three or fewer reviews.
+- The cumulative distribution reaches **100%** as the remaining higher-frequency reviewers are included.
 
-------------------------------------------------------------------------
+---
 
-# 🌎 Cumulative Listing Analysis
+## 09. 🌎 Cumulative City Analysis
 
-City-level ranking was incorporated into cumulative listing calculations
-to understand how quickly the largest markets account for the overall
-listing base.
+City ranking was combined with cumulative listing calculations to evaluate how quickly the highest-ranked cities account for the total listing base.
 
-``` dax
+```DAX
 Cumulative Listings =
 VAR CurrentRank =
     MAXX(VALUES(Listings[city]), [City Rank])
@@ -268,19 +177,17 @@ RETURN
     )
 ```
 
-This allows the dashboard to combine **city ranking with cumulative
-market contribution**.
+This creates a Pareto-style view of city market concentration.
 
-------------------------------------------------------------------------
+---
 
-# 👤 Host Segmentation
+## 10. 👤 Host Trust Analysis
 
-Host trust was analyzed using combinations of identity verification and
-profile-picture availability.
+Host trust was examined through combinations of identity verification and profile-picture availability.
 
-For example:
+Example:
 
-``` dax
+```DAX
 NotVerified_Profile =
 CALCULATE(
     [Total Hosts],
@@ -289,313 +196,185 @@ CALCULATE(
 )
 ```
 
-These calculations support the host-trust analysis presented in the
-Reviews dashboard.
+This allows host profiles to be segmented into different verification and trust categories.
 
-------------------------------------------------------------------------
+---
 
-# 🧮 Calculated Columns
+## 11. 📊 Dashboard
 
-Additional calculated columns were created to support specialized
-analysis, including:
+### 🏠 Overview
 
--   `Reviews per Reviewer`
--   `Show in Review Frequency Chart`
--   `Review Month`
--   `Month Number`
+The Overview page summarizes:
 
-These fields were particularly important for building the
-**review-frequency** and **seasonality** analyses.
+- Listings
+- Cities
+- Hosts
+- Properties
+- Reviews
+- Listing growth
+- Property/room-type trends
+- City market share
+- Average pricing
 
-![DAX Calculations and Analytical Fields](images/dax_analysis.png)
+![Airbnb Overview Dashboard](images/overview.png)
 
-------------------------------------------------------------------------
+### ⭐ Ratings
 
-# 📊 Power BI Dashboard
+The Ratings page analyzes:
 
-The final Power BI dashboard is organized into three analytical
-sections.
+- Overall city ratings
+- Accuracy
+- Cleanliness
+- Communication
+- Location
+- Check-in
+- Value for money
 
-------------------------------------------------------------------------
+![Airbnb Ratings Dashboard](images/ratings.png)
 
-## 🏠 Overview
+### 💬 Reviews
 
-The Overview dashboard provides a high-level view of Airbnb's global
-marketplace performance.
+The Reviews page analyzes:
 
-It includes:
+- Review frequency
+- Cumulative reviewer behaviour
+- Monthly review seasonality
+- Host verification
+- Profile-picture presence
 
--   Total Listings
--   Total Cities
--   Total Hosts
--   Total Properties
--   Total Reviews
--   Listing growth over time
--   Property and room-type trends
--   Market share by city
--   Average pricing
+![Airbnb Reviews Dashboard](images/reviews.png)
 
-![Airbnb Global Performance Overview](images/overview.png)
+---
 
-------------------------------------------------------------------------
-
-## ⭐ Ratings
-
-The Ratings dashboard evaluates guest satisfaction across cities and
-individual rating dimensions.
-
-The analysis includes:
-
--   Overall average rating
--   City-level rating comparison
--   Accuracy
--   Cleanliness
--   Communication
--   Location
--   Check-in
--   Value for money
-
-The dashboard allows overall ratings to be examined alongside the
-individual dimensions contributing to guest satisfaction.
-
-![Airbnb Ratings Analysis](images/ratings.png)
-
-------------------------------------------------------------------------
-
-## 💬 Reviews
-
-The Reviews dashboard focuses on customer engagement, review behaviour,
-seasonality, and host trust.
-
-The analysis includes:
-
--   Review frequency
--   Cumulative reviewer analysis
--   Monthly review seasonality
--   Host identity verification
--   Profile-picture presence
-
-The review-frequency visualization uses cumulative analysis to
-understand how reviewer activity is distributed across customers.
-
-![Airbnb Reviews Analysis](images/reviews.png)
-
-------------------------------------------------------------------------
-
-# 📌 Dashboard Snapshot
+## 12. 📌 Key KPIs
 
 | Metric | Value |
 |---|---:|
-| Listings | 2,79,712 |
+| Listings | 279,712 |
 | Cities | 10 |
-| Hosts | 1,82,024 |
+| Hosts | 182,024 |
 | Properties | 144 |
-| Reviews | 5,373K+ |
-------------------------------------------------------------------------
+| Reviews | 5.373M+ |
 
-# 💡 Key Insights
+---
 
-## 1. Airbnb's Marketplace Is Highly Concentrated
+## 13. 💡 Key Insights
 
-Paris, New York and Sydney account for a substantial proportion of the
-total listings analyzed, demonstrating the importance of major global
-markets within Airbnb's marketplace.
+### 1. Marketplace Concentration
 
-The cumulative market-share analysis further highlights how quickly the
-largest cities contribute to the overall listing base.
+Paris, New York, and Sydney account for a substantial share of the analyzed listing ecosystem, highlighting the importance of major markets.
 
-------------------------------------------------------------------------
+### 2. Rating Performance Differs Across Cities
 
-## 2. Rating Performance Varies Across Cities
+**Mexico City and Rio de Janeiro** show stronger overall rating performance, while **Hong Kong and Istanbul** rank comparatively lower.
 
-**Mexico City and Rio de Janeiro** show the strongest overall rating
-performance in the analysis, while **Hong Kong and Istanbul** rank
-comparatively lower.
+**Cleanliness and value for money** are among the dimensions that score comparatively lower across the analyzed markets.
 
-The dashboard further breaks ratings down into individual dimensions,
-helping identify areas such as **cleanliness and value for money** where
-performance is comparatively weaker.
+### 3. Reviewer Activity Is Highly Concentrated
 
-------------------------------------------------------------------------
+**86.5% of reviewers contributed only one review**, and **98.8% contributed three or fewer reviews**.
 
-## 3. Most Reviewers Are One-Time Contributors
+This indicates that most reviewers are occasional contributors rather than highly active participants.
 
-The review-frequency analysis shows that approximately **86.5% of
-reviewers contributed only one review**.
+### 4. Review Activity Is Seasonal
 
-Furthermore, approximately **98.8% of reviewers contributed three or
-fewer reviews**.
+**Paris and Rome** show stronger review activity through the European summer period, while **New York** shows increased activity toward November and December.
 
-This indicates that the reviewer base is heavily dominated by occasional
-contributors rather than highly active reviewers.
+### 5. Host Verification Is Widespread
 
-------------------------------------------------------------------------
+More than two-thirds of hosts are fully verified, while the dashboard also examines profile-picture presence as an additional trust signal.
 
-## 4. Review Activity Shows Seasonal Patterns
+---
 
-Review activity varies across different months and markets.
+## 14. 💼 Business Recommendations
 
-**Paris and Rome** show stronger review activity during the European
-summer period, while **New York** shows increased activity toward the
-end of the year.
+### Improve Repeat Reviewer Engagement
 
-These patterns demonstrate how travel seasonality can influence customer
-engagement across different Airbnb markets.
+Because the reviewer base is dominated by one-time contributors, Airbnb could explore post-stay engagement strategies designed to encourage repeat participation.
 
-------------------------------------------------------------------------
+**Potential actions:**
+- Personalized post-stay reminders
+- Review incentives where appropriate
+- Loyalty or recognition mechanisms for repeat reviewers
 
-## 5. Host Verification Is Widespread
+### Prioritize Lower-Scoring Experience Dimensions
 
-The host-trust analysis shows that more than two-thirds of Airbnb hosts
-are fully verified.
+Cities with weaker cleanliness or value-for-money scores could be targeted for host education, quality initiatives, or market-specific improvement programs.
 
-The dashboard also compares identity verification with profile-picture
-availability to provide a more detailed view of host trust signals.
+### Use Seasonality for Market Planning
 
-------------------------------------------------------------------------
+Seasonal review patterns can help guide city-level campaign timing, host communications, and customer-engagement initiatives around periods of stronger travel activity.
 
-## 6. City Market Share Reveals Major Airbnb Markets
+### Use Trust Signals in Host Experience Design
 
-The city-level analysis demonstrates that a relatively small group of
-major cities contributes a large proportion of Airbnb's overall listing
-ecosystem.
+Verification and profile completeness can be incorporated into host-quality initiatives and guest-facing trust communication.
 
-The cumulative market-share analysis makes this concentration easier to
-identify by showing how quickly the largest cities account for the total
-listing base.
+> These recommendations are analytical implications of the dashboard findings rather than measured business outcomes.
 
-------------------------------------------------------------------------
+---
 
-# 🧠 Analytical Skills Demonstrated
+## 15. 🧠 Skills Demonstrated
 
-This project demonstrates practical experience across the complete Power
-BI analytics workflow.
+| Area | Skills |
+|---|---|
+| Data Preparation | Cleaning, transformation, analytical field creation |
+| Data Modeling | Relationships, filter context, relational modeling |
+| DAX | `CALCULATE`, `FILTER`, `ALL`, `DISTINCTCOUNT`, `MAXX` |
+| Advanced Analytics | Ranking, cumulative analysis, Pareto analysis |
+| Customer Analytics | Review frequency, seasonality |
+| Host Analytics | Verification and trust segmentation |
+| Visualization | KPI cards, combo charts, interactive dashboard design |
+| Business Analysis | Market analysis, findings, recommendations |
 
-  -----------------------------------------------------------------------
-  Area                                Skills Demonstrated
-  ----------------------------------- -----------------------------------
-  **Data Preparation**                Data cleaning, transformation,
-                                      data-type management
+---
 
-  **Data Modeling**                   Relational modeling, table
-                                      relationships, filter context
-
-  **DAX**                             CALCULATE, FILTER, ALL,
-                                      DISTINCTCOUNT, MAXX, ranking
-
-  **Advanced Analysis**               Cumulative analysis, Pareto
-                                      analysis, segmentation
-
-  **Time-Series Analysis**            Monthly trends and seasonality
-
-  **Customer Analytics**              Review frequency and reviewer
-                                      behaviour
-
-  **Host Analytics**                  Verification and trust segmentation
-
-  **Visualization**                   KPI cards, combo charts, trend
-                                      analysis, interactive dashboards
-
-  **Business Analytics**              Market analysis, performance
-                                      evaluation, customer behaviour
-  -----------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-# 🛠️ Tools & Technologies
-
--   **Power BI**
--   **DAX**
--   **Power Query**
--   **Microsoft Excel**
--   **Data Modeling**
--   **Data Visualization**
--   **Business Intelligence**
-
-------------------------------------------------------------------------
-
-# 📂 Project Files
-
-The GitHub repository contains the project documentation, dashboard
-screenshots and supporting files.
-
-Due to the large size of the Power BI report and source datasets, the
-complete files are hosted externally.
+## 16. 📂 Project Files
 
 ### 📊 Power BI Dashboard
 
-🔗 **[Download Power BI Dashboard
-(.pbix)][(https://drive.google.com/file/d/1HuSs8TTBmUzy8C6Tp2DG09vaYdrCmwxH/view?usp=drive_link)]**
+🔗 **[Download / Open Power BI Dashboard →](PASTE_GOOGLE_DRIVE_PBIX_LINK)**
 
 ### 📁 Project Datasets
 
-🔗 **[Access Project Datasets][https://drive.google.com/drive/folders/1KIa9Hq4CCvPmAxcjQuYo3S4b0doIILWY?usp=drive_link]**
+🔗 **[Access Project Datasets →](PASTE_GOOGLE_DRIVE_DATASET_LINK)**
 
-> The `.pbix` file requires **Power BI Desktop** to open and interact
-> with the dashboard.
+> The `.pbix` file requires **Power BI Desktop** to open.
 
-------------------------------------------------------------------------
+---
 
-# 📁 Project Structure
+## 17. 📁 Project Structure
 
-``` text
+```text
 Airbnb-Global-Performance/
 │
 ├── README.md
-│
+├── Dashboard/
+├── dataset/
 ├── images/
 │   ├── overview.png
 │   ├── ratings.png
 │   ├── reviews.png
 │   ├── data_model.png
-│   ├── dax_analysis.png
-│   └── dataset_preview.png
-│
-└── data/
-    └── dataset_info.md
+│   └── dax_analysis.png
+└── dashboard.md
 ```
 
-------------------------------------------------------------------------
+---
 
-# 📚 Dataset Reference
+## 18. 🎓 Key Takeaway
 
-The dataset used for this project was obtained from the **Maven
-Analytics Data Playground**.
+This project demonstrates the full Power BI analytics workflow:
 
-🔗 [Maven Analytics -- Airbnb Listings &
-Reviews](https://mavenanalytics.io/data-playground/airbnb-listings-reviews)
+**Data → Preparation → Modeling → DAX → Analysis → Visualization → Business Insights → Recommendations**
 
-The original source is **Inside Airbnb**.
+It demonstrates how structured data modeling and DAX can be used to move from descriptive reporting toward deeper marketplace, customer, and host analysis.
 
-------------------------------------------------------------------------
+---
 
-# 🎓 Key Takeaway
-
-This project demonstrates the complete process of transforming a
-large-scale dataset into an interactive business intelligence solution:
-
-**Data → Preparation → Modeling → DAX → Analysis → Visualization →
-Insights**
-
-The project particularly demonstrates how **DAX-driven calculations and
-data modeling can be used to move beyond basic reporting and build
-deeper analytical views of marketplace performance and customer
-behaviour.**
-
-------------------------------------------------------------------------
-
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Adithya Ruby**
 
-Computer Science Graduate \| Aspiring Data Analyst
+Computer Science Graduate | Data Analytics
 
-Interested in using **data analytics, business intelligence, and
-visualization** to transform complex datasets into actionable business
-insights.
-
-------------------------------------------------------------------------
-
-⭐ **If you found this project interesting, feel free to explore the
-dashboard screenshots or download the Power BI report to explore the
-analysis interactively.**
+Interested in **Data Analytics, Business Intelligence, SQL, Power BI, and Business Analysis**.
