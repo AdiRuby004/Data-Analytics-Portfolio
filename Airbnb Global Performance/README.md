@@ -200,7 +200,37 @@ This allows host profiles to be segmented into different verification and trust 
 
 ---
 
-## 11. 📊 Dashboard
+## 15. 🧩 Challenges & Solutions
+
+### Challenge 1 — Different Data Granularities
+
+The **Listings** and **Reviews** datasets contain information at different levels of detail.
+
+**Solution:** Built a relational model around `listing_id` and used DAX filter-context logic to support listing-level and reviewer-level analysis without losing analytical flexibility.
+
+### Challenge 2 — Measuring Reviewer Concentration
+
+A simple review count does not show how reviewer participation is distributed.
+
+**Solution:** Created `Reviews per Reviewer`, cumulative reviewer measures, and cumulative percentage calculations to build a Pareto-style view of reviewer behaviour.
+
+### Challenge 3 — Combining Marketplace and Experience Metrics
+
+Listing volume, host characteristics, ratings, and review behaviour represent different aspects of Airbnb's marketplace.
+
+**Solution:** Organized the dashboard into Overview, Ratings, and Reviews sections so that marketplace performance, guest experience, and customer engagement can be analyzed together while remaining easy to navigate.
+
+---
+
+## 16. 📊 Interactive Dashboard
+
+The screenshots below provide a preview of the completed report.
+
+For the complete interactive Power BI file:
+
+🔗 **[Open / Download Power BI Dashboard →](dashboard.md)**
+
+## 17. 📊 Dashboard
 
 ### 🏠 Overview
 
@@ -262,52 +292,81 @@ The Reviews page analyzes:
 
 ### 1. Marketplace Concentration
 
-Paris, New York, and Sydney account for a substantial share of the analyzed listing ecosystem, highlighting the importance of major markets.
+Paris, New York, and Sydney account for a substantial share of the analyzed listing ecosystem.
+
+**Business implication:** Airbnb's overall marketplace performance is influenced heavily by a relatively small group of major urban markets.
+
+**Potential action:** Prioritize host acquisition, quality initiatives, and market-specific growth strategies in high-contribution cities while identifying opportunities to strengthen lower-share markets.
+
+---
 
 ### 2. Rating Performance Differs Across Cities
 
 **Mexico City and Rio de Janeiro** show stronger overall rating performance, while **Hong Kong and Istanbul** rank comparatively lower.
 
-**Cleanliness and value for money** are among the dimensions that score comparatively lower across the analyzed markets.
+The analysis also shows **cleanliness and value for money** as comparatively weaker rating dimensions.
+
+**Business implication:** Overall guest satisfaction can vary meaningfully by market and by the specific experience dimension being evaluated.
+
+**Potential action:** Use city-level rating scorecards to identify underperforming markets and focus host education or quality-improvement initiatives on the weakest dimensions.
+
+---
 
 ### 3. Reviewer Activity Is Highly Concentrated
 
-**86.5% of reviewers contributed only one review**, and **98.8% contributed three or fewer reviews**.
+**86.5% of reviewers contributed only one review**, while **98.8% contributed three or fewer reviews**.
 
-This indicates that most reviewers are occasional contributors rather than highly active participants.
+**Business implication:** The reviewer base is dominated by occasional contributors, creating a potential opportunity to increase repeat engagement.
+
+**Potential action:** Test personalized post-stay reminders, repeat-review engagement campaigns, or loyalty mechanisms aimed at first-time reviewers.
+
+---
 
 ### 4. Review Activity Is Seasonal
 
-**Paris and Rome** show stronger review activity through the European summer period, while **New York** shows increased activity toward November and December.
+**Paris and Rome** show stronger review activity during the European summer period, while **New York** shows increased activity toward November and December.
+
+**Business implication:** Customer engagement varies by market and season, which can affect when campaigns and host communication are most relevant.
+
+**Potential action:** Use seasonal demand and review patterns to time market-specific campaigns, host communications, and customer-engagement initiatives.
+
+---
 
 ### 5. Host Verification Is Widespread
 
-More than two-thirds of hosts are fully verified, while the dashboard also examines profile-picture presence as an additional trust signal.
+More than two-thirds of hosts are fully verified, while the dashboard also evaluates profile-picture presence as an additional trust signal.
+
+**Business implication:** Verification and profile completeness can contribute to how host trust is represented across the marketplace.
+
+**Potential action:** Incorporate verification and profile completeness into host-quality initiatives and guest-facing trust communication.
 
 ---
 
 ## 14. 💼 Business Recommendations
 
-### Improve Repeat Reviewer Engagement
+### 1. Increase Repeat Reviewer Engagement
 
-Because the reviewer base is dominated by one-time contributors, Airbnb could explore post-stay engagement strategies designed to encourage repeat participation.
+The strong concentration of one-time reviewers suggests an opportunity to improve repeat customer engagement.
 
-**Potential actions:**
-- Personalized post-stay reminders
-- Review incentives where appropriate
-- Loyalty or recognition mechanisms for repeat reviewers
+**Recommended action:** Segment first-time reviewers and test targeted post-stay reminders, personalized review prompts, or loyalty-oriented engagement initiatives.
 
-### Prioritize Lower-Scoring Experience Dimensions
+### 2. Prioritize Weak Rating Dimensions
 
-Cities with weaker cleanliness or value-for-money scores could be targeted for host education, quality initiatives, or market-specific improvement programs.
+Cleanliness and value for money appear comparatively weaker across the analyzed markets.
 
-### Use Seasonality for Market Planning
+**Recommended action:** Build city-level experience scorecards and target host education or quality-improvement programs around the weakest dimensions.
 
-Seasonal review patterns can help guide city-level campaign timing, host communications, and customer-engagement initiatives around periods of stronger travel activity.
+### 3. Use Market Seasonality for Planning
 
-### Use Trust Signals in Host Experience Design
+Review activity differs across cities and months.
 
-Verification and profile completeness can be incorporated into host-quality initiatives and guest-facing trust communication.
+**Recommended action:** Align city-level marketing, host communication, and customer-engagement activity with periods of stronger observed review activity.
+
+### 4. Use Trust Signals in Host Quality Programs
+
+Verification and profile completeness provide measurable host-level trust indicators.
+
+**Recommended action:** Encourage stronger host profile completeness and verification to support guest confidence and marketplace quality.
 
 > These recommendations are analytical implications of the dashboard findings rather than measured business outcomes.
 
@@ -328,7 +387,7 @@ Verification and profile completeness can be incorporated into host-quality init
 
 ---
 
-## 16. 📂 Project Files
+## 19. 📂 Project Files
 
 ### 📊 Power BI Dashboard
 
@@ -342,7 +401,7 @@ Verification and profile completeness can be incorporated into host-quality init
 
 ---
 
-## 17. 📁 Project Structure
+## 20. 📁 Project Structure
 
 ```text
 Airbnb-Global-Performance/
@@ -361,7 +420,7 @@ Airbnb-Global-Performance/
 
 ---
 
-## 18. 🎓 Key Takeaway
+## 21. 🎓 Key Takeaway
 
 This project demonstrates the full Power BI analytics workflow:
 
@@ -371,7 +430,7 @@ It demonstrates how structured data modeling and DAX can be used to move from de
 
 ---
 
-## 👨‍💻 Author
+## 22. 👨‍💻 Author
 
 **Adithya Ruby**
 
