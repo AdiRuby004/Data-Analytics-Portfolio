@@ -228,7 +228,7 @@ The screenshots below provide a preview of the completed report.
 
 For the complete interactive Power BI file:
 
-🔗 **[Open / Download Power BI Dashboard →](Airbnb Global Performance/dashboard/dashboard.md)**
+🔗 **[Open / Download Power BI Dashboard →](dashboard.md)**
 
 ## 17. 📊 Dashboard
 
