@@ -39,9 +39,9 @@ My projects span **data analysis, SQL, Python, business intelligence, data visua
 
 | Project | Tools | Description |
 |---|---|---|
-| [🏠 Airbnb Global Performance](./Airbnb%20Project/) | Power BI, DAX, Power Query, Excel | Interactive analysis of Airbnb listings, hosts, ratings, review behaviour and marketplace performance across 10 major cities. |
-| [🛍️ Customer Shopping Behaviour](./Customer%20Shopping%20Behaviour/) | Python, Pandas, PostgreSQL, SQL, Power BI | End-to-end customer analytics project covering data cleaning, feature engineering, SQL analysis and interactive BI reporting. |
-| [🚕 Uber Data Engineering](./Uber%20Project/) | Python, GCP, BigQuery, Mage, Looker Studio | End-to-end data pipeline for processing and analyzing NYC taxi trip data. |
+| [🏠 Airbnb Global Performance](https://github.com/AdiRuby004/Airbnb-Global-Performance) | Power BI, DAX, Power Query, Excel | Interactive analysis of Airbnb listings, hosts, ratings, review behaviour, and marketplace performance across 10 major cities. |
+| [🛍️ Customer Shopping Behaviour](https://github.com/AdiRuby004/Customer-Shopping-Behavior) | Python, Pandas, PostgreSQL, SQL, Power BI | End-to-end customer analytics project covering data cleaning, feature engineering, SQL analysis, customer behaviour, and interactive BI reporting. |
+| [🚕 Uber Trip Analysis](https://github.com/AdiRuby004/Uber-Trip-Analysis) | Python, SQL, Power BI | Data analysis project exploring Uber trip patterns, customer behaviour, and operational trends through SQL-based analysis and visualization. |
 
 ---
 
@@ -51,7 +51,7 @@ My projects span **data analysis, SQL, Python, business intelligence, data visua
 
 **Power BI · DAX · Power Query**
 
-Analyzed **279K+ listings, 182K+ hosts and 5.3M+ reviews** across 10 cities.
+Analyzed **279K+ listings, 182K+ hosts, and 5.3M+ reviews** across 10 cities.
 
 **Key areas:**
 - Marketplace and city-level performance
@@ -60,7 +60,7 @@ Analyzed **279K+ listings, 182K+ hosts and 5.3M+ reviews** across 10 cities.
 - Host verification analysis
 - Seasonal review behaviour
 
-🔗 [View Project →](./Airbnb%20Project/)
+🔗 [View Project →](https://github.com/AdiRuby004/Airbnb-Global-Performance)
 
 ---
 
@@ -68,25 +68,25 @@ Analyzed **279K+ listings, 182K+ hosts and 5.3M+ reviews** across 10 cities.
 
 **Python · SQL · PostgreSQL · Power BI**
 
-An end-to-end customer analytics project focused on purchasing behaviour, customer segmentation, product performance and business insights.
+An end-to-end customer analytics project focused on purchasing behaviour, customer segmentation, product performance, and business insights.
 
-🔗 [View Project →](./Customer%20Shopping%20Behaviour/)
-
----
-
-### 🚕 Uber Data Engineering
-
-**Python · GCP · BigQuery · Mage · Looker Studio**
-
-An end-to-end data engineering workflow covering data ingestion, transformation, orchestration, cloud storage, analytics and dashboard development.
-
-🔗 [View Project →](./Uber%20Project/)
+🔗 [View Project →](https://github.com/AdiRuby004/Customer-Shopping-Behavior)
 
 ---
 
-# 🎯 What I'm Interested In
+### 🚕 Uber Trip Analysis
 
-I'm particularly interested in **Data Analyst and Business Analytics roles** where I can combine analytical thinking, business understanding and technical skills to solve real-world problems with data.
+**Python · SQL · Power BI**
+
+An analytical project focused on Uber trip data, exploring trip patterns, customer behaviour, operational trends, and business performance.
+
+🔗 [View Project →](https://github.com/AdiRuby004/Uber-Trip-Analysis)
+
+---
+
+# 🎯 Career Focus
+
+I'm interested in **Data Analyst and Business Analytics roles** where I can combine analytical thinking, business understanding, and technical skills to solve real-world problems with data.
 
 ---
 
@@ -96,7 +96,7 @@ I'm particularly interested in **Data Analyst and Business Analytics roles** whe
 
 Computer Science Graduate | Aspiring Data Analyst
 
-I enjoy working across the analytics workflow — from preparing and transforming raw data to building dashboards and translating analysis into clear business insights.
+I enjoy working across the analytics workflow — from preparing and transforming raw data to performing SQL analysis, building interactive dashboards, and translating analysis into clear business insights.
 
 📌 **Core Interests:** Data Analytics · Business Intelligence · SQL · Power BI · Business Analysis
 
