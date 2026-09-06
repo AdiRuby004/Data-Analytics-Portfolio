@@ -332,11 +332,11 @@ Verification and profile completeness can be incorporated into host-quality init
 
 ### 📊 Power BI Dashboard
 
-🔗 **[Download / Open Power BI Dashboard →](PASTE_GOOGLE_DRIVE_PBIX_LINK)**
+🔗 **[Download / Open Power BI Dashboard →](https://drive.google.com/file/d/1HuSs8TTBmUzy8C6Tp2DG09vaYdrCmwxH/view?usp=drive_link)**
 
 ### 📁 Project Datasets
 
-🔗 **[Access Project Datasets →](PASTE_GOOGLE_DRIVE_DATASET_LINK)**
+🔗 **[Access Project Datasets →](https://drive.google.com/drive/folders/1KIa9Hq4CCvPmAxcjQuYo3S4b0doIILWY?usp=drive_link)**
 
 > The `.pbix` file requires **Power BI Desktop** to open.
 
