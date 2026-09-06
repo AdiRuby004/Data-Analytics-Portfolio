@@ -108,7 +108,7 @@ An operational analytics project analyzing **Uber bookings, revenue, vehicle per
 
 ### Dashboard Preview
 
-![Uber Trip Analysis Dashboard](Uber%20Trip%20Analysis/images/uber_dashboard.png)
+![Uber Trip Analysis Dashboard](Uber%20Trip%20Analysis/images/uber_analysis_dashboard.png)
 
 ### Key Areas
 
