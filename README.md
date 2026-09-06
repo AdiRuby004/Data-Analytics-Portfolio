@@ -1,0 +1,105 @@
+# 📊 Adithya Ruby — Data Analytics Portfolio
+
+Welcome to my data analytics portfolio.
+
+I use **SQL, Python, Power BI, and Excel** to explore data, uncover patterns, answer business questions, and transform raw information into actionable insights.
+
+My projects span **data analysis, SQL, Python, business intelligence, data visualization, and dashboard development**, with a focus on solving practical business problems through data.
+
+---
+
+## 🧰 Technical Skills
+
+**Programming & Data Analysis**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+
+**SQL & Databases**
+
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+
+**Business Intelligence & Visualization**
+
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-8A2BE2?style=flat)
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
+
+**Other**
+
+![Power Query](https://img.shields.io/badge/Power%20Query-217346?style=flat&logo=microsoft&logoColor=white)
+
+---
+
+# 📚 Projects
+
+## 📊 Data Analytics & Business Intelligence
+
+| Project | Tools | Description |
+|---|---|---|
+| [🏠 Airbnb Global Performance](./Airbnb%20Project/) | Power BI, DAX, Power Query, Excel | Interactive analysis of Airbnb listings, hosts, ratings, review behaviour and marketplace performance across 10 major cities. |
+| [🛍️ Customer Shopping Behaviour](./Customer%20Shopping%20Behaviour/) | Python, Pandas, PostgreSQL, SQL, Power BI | End-to-end customer analytics project covering data cleaning, feature engineering, SQL analysis and interactive BI reporting. |
+| [🚕 Uber Data Engineering](./Uber%20Project/) | Python, GCP, BigQuery, Mage, Looker Studio | End-to-end data pipeline for processing and analyzing NYC taxi trip data. |
+
+---
+
+# ⭐ Featured Projects
+
+### 🏠 Airbnb Global Performance
+
+**Power BI · DAX · Power Query**
+
+Analyzed **279K+ listings, 182K+ hosts and 5.3M+ reviews** across 10 cities.
+
+**Key areas:**
+- Marketplace and city-level performance
+- Rating analysis
+- Review-frequency and Pareto analysis
+- Host verification analysis
+- Seasonal review behaviour
+
+🔗 [View Project →](./Airbnb%20Project/)
+
+---
+
+### 🛍️ Customer Shopping Behaviour
+
+**Python · SQL · PostgreSQL · Power BI**
+
+An end-to-end customer analytics project focused on purchasing behaviour, customer segmentation, product performance and business insights.
+
+🔗 [View Project →](./Customer%20Shopping%20Behaviour/)
+
+---
+
+### 🚕 Uber Data Engineering
+
+**Python · GCP · BigQuery · Mage · Looker Studio**
+
+An end-to-end data engineering workflow covering data ingestion, transformation, orchestration, cloud storage, analytics and dashboard development.
+
+🔗 [View Project →](./Uber%20Project/)
+
+---
+
+# 🎯 What I'm Interested In
+
+I'm particularly interested in **Data Analyst and Business Analytics roles** where I can combine analytical thinking, business understanding and technical skills to solve real-world problems with data.
+
+---
+
+# 👨‍💻 About Me
+
+**Adithya Ruby**
+
+Computer Science Graduate | Aspiring Data Analyst
+
+I enjoy working across the analytics workflow — from preparing and transforming raw data to building dashboards and translating analysis into clear business insights.
+
+📌 **Core Interests:** Data Analytics · Business Intelligence · SQL · Power BI · Business Analysis
+
+---
+
+⭐ Feel free to explore the projects above.
