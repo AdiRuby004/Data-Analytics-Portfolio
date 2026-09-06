@@ -38,6 +38,10 @@ My projects focus on **business-oriented data analysis, customer behaviour, mark
 
 An interactive marketplace analytics project analyzing **279K+ listings, 182K+ hosts, 144 property types, 10 cities, and 5.3M+ reviews**.
 
+### Dashboard Preview
+
+![Airbnb Global Performance Dashboard](Airbnb%20Global%20Performance/images/overview.png)
+
 ### Key Areas
 
 - 🌎 Marketplace and city-level performance
@@ -68,6 +72,10 @@ An interactive marketplace analytics project analyzing **279K+ listings, 182K+ h
 
 An end-to-end customer analytics project focused on understanding **purchasing behaviour, customer segments, product performance, discounts, subscriptions, ratings, and purchase frequency**.
 
+### Dashboard Preview
+
+![Customer Shopping Behaviour Dashboard](Customer%20Shopping%20Behavior/images/powerbi_dashboard.png)
+
 ### Key Areas
 
 - 👥 Customer demographics and segmentation
@@ -97,6 +105,10 @@ An end-to-end customer analytics project focused on understanding **purchasing b
 **Power BI · DAX · Power Query · Excel**
 
 An operational analytics project analyzing **Uber bookings, revenue, vehicle performance, trip distance, cancellations, locations, and customer/driver ratings**.
+
+### Dashboard Preview
+
+![Uber Trip Analysis Dashboard](Uber%20Trip%20Analysis/images/uber_dashboard.png)
 
 ### Key Areas
 
