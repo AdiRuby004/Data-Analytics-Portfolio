@@ -110,7 +110,7 @@ An end-to-end retail analytics project using **3,900 customer records** to analy
 
 An operational analytics project analyzing **150K Uber trip records** across bookings, revenue, vehicle types, distance, cancellations, locations, and customer/driver ratings.
 
-![Uber Trip Analysis Dashboard](https://raw.githubusercontent.com/AdiRuby004/Data-Analytics-Portfolio/main/Uber%20Trip%20Analysis/images/uber_dashboard.png)
+![Uber Trip Analysis Dashboard](https://raw.githubusercontent.com/AdiRuby004/Data-Analytics-Portfolio/main/Uber%20Trip%20Analysis/images/uber_analysis_dashboard.png)
 
 **Key findings**
 - **93K completed bookings vs 57K lost bookings** highlight a significant booking-loss opportunity.
