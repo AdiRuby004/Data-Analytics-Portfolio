@@ -39,7 +39,7 @@ My projects span **data analysis, SQL, Python, business intelligence, data visua
 
 | Project | Tools | Description |
 |---|---|---|
-| [🏠 Airbnb Global Performance](https://github.com/AdiRuby004/Data-Analytics-Portfolio/tree/main/Airbnb%20Global%20Performance) | Power BI, DAX, Power Query, Excel | Interactive analysis of Airbnb listings, hosts, ratings, review behaviour, and marketplace performance across 10 major cities. |
+| [🏠 Airbnb Global Performance](https://github.com/AdiRuby004/Data-Analytics-Portfolio/tree/main/Airbnb%20Global%20Performance) | Power BI, DAX, Power Query, Excel | Interactive analysis of Airbnb listings, hosts, ratings, review behavior, and marketplace performance across 10 major cities. |
 | [🛍️ Customer Shopping Behaviour](https://github.com/AdiRuby004/Data-Analytics-Portfolio/tree/main/Customer%20Shopping%20Behavior) | Python, Pandas, PostgreSQL, SQL, Power BI | End-to-end customer analytics project covering data cleaning, feature engineering, SQL analysis, customer behavior, and interactive BI reporting. |
 | [🚕 Uber Trip Analysis](https://github.com/AdiRuby004/Data-Analytics-Portfolio/tree/main/Uber%20Trip%20Analysis) | Python, SQL, Power BI | Data analysis project exploring Uber trip patterns, customer behavior, and operational trends through SQL-based analysis and visualization. |
 
@@ -58,17 +58,27 @@ Analyzed **279K+ listings, 182K+ hosts, and 5.3M+ reviews** across 10 cities.
 - Rating analysis
 - Review-frequency and Pareto analysis
 - Host verification analysis
-- Seasonal review behaviour
+- Seasonal review behavior
 
 🔗 [View Project →](https://github.com/AdiRuby004/Data-Analytics-Portfolio/tree/main/Airbnb%20Global%20Performance)
 
 ---
 
-### 🛍️ Customer Shopping Behaviour
+### 🛍️ Customer Shopping Behavior
 
 **Python · SQL · PostgreSQL · Power BI**
 
-An end-to-end customer analytics project focused on purchasing behaviour, customer segmentation, product performance, and business insights.
+An end-to-end customer analytics project focused on purchasing behavior, customer segmentation, product performance, and business insights.
+
+**Key areas:**
+- Customer demographics & segmentation
+- Purchasing behavior & spending patterns
+- Product and category performance
+- Discount impact on purchasing
+- Customer loyalty & purchase frequency
+- Subscription and payment behavior
+- Review ratings and customer preferences
+- Interactive Power BI dashboard
 
 🔗 [View Project →](https://github.com/AdiRuby004/Data-Analytics-Portfolio/tree/main/Customer%20Shopping%20Behavior)
 
@@ -78,7 +88,18 @@ An end-to-end customer analytics project focused on purchasing behaviour, custom
 
 **Python · SQL · Power BI**
 
-An analytical project focused on Uber trip data, exploring trip patterns, customer behaviour, operational trends, and business performance.
+An analytical project focused on Uber trip data, exploring trip patterns, customer behavior, operational trends, and business performance.
+
+**Key areas:**
+- Booking performance and booking status
+- Revenue and booking value analysis
+- Vehicle-type performance
+- Monthly and quarterly trends
+- Ride distance analysis
+- Customer and driver ratings
+- Pickup and drop-off location analysis
+- Customer and driver cancellation analysis
+- Interactive Power BI dashboard
 
 🔗 [View Project →](https://github.com/AdiRuby004/Data-Analytics-Portfolio/tree/main/Uber%20Trip%20Analysis)
 
