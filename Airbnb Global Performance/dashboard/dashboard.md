@@ -4,7 +4,7 @@ Explore the complete interactive Power BI report below.
 
 ## 🔗 Power BI Dashboard
 
-**[Open / Download the Power BI Dashboard →](YOUR_GOOGLE_DRIVE_LINK)**
+**[Open / Download the Power BI Dashboard →](https://drive.google.com/file/d/1HuSs8TTBmUzy8C6Tp2DG09vaYdrCmwxH/view?usp=drive_link)**
 
 > The `.pbix` file is hosted on Google Drive due to its large file size.
 
