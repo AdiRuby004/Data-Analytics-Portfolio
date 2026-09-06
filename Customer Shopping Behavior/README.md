@@ -3,190 +3,121 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-8A2BE2?style=flat)
 
-## Overview
+---
 
-This project analyzes customer shopping behaviour to understand purchasing patterns, customer segments, product preferences, and factors that influence consumer decisions.
+## 01. 📌 Project Overview
 
-The project follows an end-to-end data analytics workflow:
+This project analyzes **3,900 customer records** to understand purchasing behaviour, customer segments, product performance, discounts, subscriptions, ratings, shipping preferences, payment methods, and purchase frequency.
 
-**Raw Data → Python EDA & Cleaning → Feature Engineering → PostgreSQL/SQL Analysis → Power BI Dashboard → Business Insights**
+The project follows an end-to-end analytics workflow:
 
-The analysis is designed around a retail business problem: using customer shopping data to identify trends, improve customer engagement and loyalty, and support better marketing and product strategies.
+**Raw Data → Python EDA & Cleaning → Feature Engineering → PostgreSQL/SQL Analysis → Power BI Dashboard → Insights → Recommendations**
+
+The objective is to move from descriptive customer data toward actionable retail insights.
 
 ---
 
-## 🎯 Business Problem
+## 02. 🎯 Business Problem
 
-The business wants to better understand how customers behave across demographics, products, discounts, reviews, seasons, payment methods, and purchasing frequency.
+The business wants to understand customer behaviour across demographics, products, discounts, reviews, subscriptions, payment methods, shipping preferences, and purchasing frequency.
 
-The key business question is:
+### Key Business Questions
 
-> **How can the company leverage consumer shopping data to identify trends, improve customer engagement, and optimize marketing and product strategies?**
-
----
-
-## 🔄 Project Workflow
-
-```text
-                 Raw Customer Data
-                        │
-                        ▼
-              Python + Pandas
-              ┌─────────────────┐
-              │ EDA             │
-              │ Data Cleaning   │
-              │ Transformation  │
-              └────────┬────────┘
-                       │
-                       ▼
-               Feature Engineering
-                       │
-                       ▼
-                PostgreSQL + SQL
-               Business Analysis
-                       │
-                       ▼
-                  Power BI
-             Dashboard + DAX
-                       │
-                       ▼
-             Business Insights
-              & Recommendations
-```
+- Which customer segments contribute the most revenue?
+- Which categories and products perform best?
+- How does discount usage relate to purchasing behaviour?
+- Which customers represent loyalty or retention opportunities?
+- How do subscription and shipping preferences vary across customers?
+- Which products receive the strongest customer ratings?
 
 ---
 
-# 📂 Dataset
+## 03. 📂 Dataset
 
-The dataset contains **3,900 customer records** covering customer demographics, purchasing activity, product details, discounts, ratings, subscriptions, shipping preferences, payment methods, and purchase frequency.
+The dataset contains **3,900 customer records** covering demographics, purchasing activity, product information, discounts, ratings, subscriptions, shipping, payment methods, and purchase frequency.
 
-### Main Columns
+### Main Data Areas
 
-| Column | Description |
+| Area | Examples |
 |---|---|
-| `customer_id` | Unique customer identifier |
-| `age` | Customer age |
-| `gender` | Customer gender |
-| `item_purchased` | Product purchased |
-| `category` | Product category |
-| `purchase_amount` | Purchase amount in USD |
-| `location` | Customer location |
-| `size` | Product size |
-| `color` | Product colour |
-| `season` | Season of purchase |
-| `review_rating` | Customer review rating |
-| `subscription_status` | Subscription status |
-| `shipping_type` | Shipping method |
-| `discount_applied` | Whether a discount was applied |
-| `previous_purchases` | Number of previous purchases |
-| `payment_method` | Payment method |
-| `frequency_of_purchases` | Purchase frequency |
-
-## Dataset Preview
-
-<img src="images/dataset_preview.png" alt="Dataset Preview" width="100%">
+| Customer | `customer_id`, `age`, `gender` |
+| Product | `item_purchased`, `category`, `size`, `color` |
+| Purchase | `purchase_amount`, `previous_purchases` |
+| Customer Experience | `review_rating`, `shipping_type` |
+| Marketing | `discount_applied`, `subscription_status` |
+| Behaviour | `frequency_of_purchases`, `payment_method` |
 
 ---
 
-# 🐍 Python – Data Preparation & EDA
+## 04. 🐍 Python — Data Preparation & EDA
 
-Python and Pandas were used to inspect, clean, transform, and explore the raw dataset.
+Python and Pandas were used for:
 
-### Key Activities
+- Dataset inspection
+- Data cleaning
+- Missing-value analysis
+- Data-type review
+- Column standardization
+- Exploratory analysis
+- Feature engineering
+- Preparing the dataset for SQL analysis
 
-- Loaded the CSV dataset using Pandas
-- Inspected structure, data types, and descriptive statistics
-- Checked for missing values
-- Explored customer and purchasing patterns
-- Standardized column names
-- Removed redundant fields
-- Created additional analytical features
-- Prepared the cleaned dataset for SQL analysis
+### Feature Engineering
 
-## Data Cleaning
-
-The data cleaning process included:
-
-- Handling missing `review_rating` values using the median rating within each product category
-- Standardizing column names for easier analysis and SQL usage
-- Removing the redundant `promo_code_used` column after checking its overlap with `discount_applied`
-- Verifying that the cleaned dataset contained no remaining missing values
-
-<img src="images/data_cleaning.png" alt="Python Data Cleaning" width="100%">
-
----
-
-## Feature Engineering
-
-### Age Group
-
-Customers were segmented into four age groups:
+Customers were grouped into age segments including:
 
 - Young Adult
 - Adult
 - Middle Aged
 - Senior
 
-<img src="images/age_group_feature.png" alt="Age Group Feature Engineering" width="100%">
-
-### Purchase Frequency in Days
-
-Purchase frequency categories were converted into numerical day intervals to make frequency-based analysis easier.
-
-<img src="images/purchase_frequency_feature.png" alt="Purchase Frequency Feature Engineering" width="100%">
+Purchase-frequency categories were also converted into numerical day intervals to support frequency-based analysis.
 
 ---
 
-# 🗄️ SQL Analysis
+## 05. 🗄️ SQL & PostgreSQL Analysis
 
-The cleaned dataset was loaded into a PostgreSQL database for structured business analysis.
+The cleaned dataset was loaded into PostgreSQL for structured business analysis.
 
-SQL queries were used to answer practical business questions, including:
+### Questions Answered
 
-- What is the total revenue generated by male vs. female customers?
-- Which discounted customers still spent above the average purchase amount?
-- Which products have the highest average review ratings?
-- How do average purchase amounts differ between shipping types?
+- Total revenue by gender
+- Discounted customers spending above average
+- Highest-rated products
+- Average purchase amount by shipping type
 
 ### SQL Concepts Used
 
 - `SELECT`
 - `WHERE`
 - `GROUP BY`
-- Aggregate functions such as `SUM()` and `AVG()`
+- `SUM()`
+- `AVG()`
 - Subqueries
 - `ORDER BY`
 - `LIMIT`
 - `CASE WHEN`
-- CTEs using `WITH`
-- Window functions such as `ROW_NUMBER()`
+- CTEs
+- `ROW_NUMBER()`
 - `PARTITION BY`
-- Conditional filtering
-
-<img src="images/sql_analysis.png" alt="SQL Analysis Queries" width="100%">
-
-<img src="images/sql_analysis2.png" alt="Advanced SQL Queries" width="100%">
 
 ---
 
-# 🔗 Data Model
+## 06. 🔗 Data Model
 
-The Power BI model connects the customer data with a separate **Images** table using the **Category** field.
+The Power BI model connects the customer dataset with an **Images** table using `Category`.
 
-This relationship allows product/category visuals in the dashboard to be associated with the corresponding image data.
-
-<img src="images/data_model.png" alt="Power BI Data Model" width="100%">
+This relationship allows the dashboard to associate product/category analysis with corresponding visual assets.
 
 ---
 
-# 📊 Power BI Dashboard
+## 07. 📊 Power BI Dashboard
 
-The cleaned and analyzed data was visualized in Power BI through an interactive customer shopping behaviour dashboard.
-
-### Dashboard Includes
+The dashboard includes:
 
 - Total customers
 - Total revenue
@@ -196,19 +127,15 @@ The cleaned and analyzed data was visualized in Power BI through an interactive 
 - Revenue by category
 - Subscription status
 - Customer type
-- Category filters
-- Gender filters
-- Shipping type filters
+- Category filtering
+- Gender filtering
+- Shipping-type filtering
 
-## Dashboard Preview
-
-<img src="images/powerbi_dashboard.png" alt="Customer Shopping Behaviour Power BI Dashboard" width="100%">
+![Customer Shopping Behaviour Dashboard](images/powerbi_dashboard.png)
 
 ---
 
-# 📌 Dashboard Snapshot
-
-The dashboard provides a high-level view of the dataset, including:
+## 08. 📌 Dashboard Snapshot
 
 | Metric | Value |
 |---|---:|
@@ -218,167 +145,111 @@ The dashboard provides a high-level view of the dataset, including:
 | Average Review | 3.75 |
 | Subscribers | 27% |
 
-The dashboard also shows revenue comparisons across age groups and product categories, along with customer, subscription, gender, category, and shipping filters.
-
 ---
 
-## 💡 Key Insights
+## 09. 💡 Key Insights
 
-### 1. Clothing Generates the Highest Revenue
+### 1. Clothing Is the Strongest Revenue Category
 
-Clothing contributes around **$100K**, making it the top-performing category.
+Clothing contributes around **$100K**, making it the strongest-performing category in the dashboard.
 
-**Why?** Higher customer demand for clothing drives its stronger revenue contribution.
+### 2. Young Adults Lead Revenue Contribution
 
----
+Young Adults contribute approximately **$62K**, the highest among the analyzed age groups.
 
-### 2. Most Customers Are Non-Subscribers
+### 3. Subscription Penetration Is Low
 
-Around **73% of customers are not subscribed**, while only 27% are subscribers.
+Only **27% of customers are subscribers**, while approximately 73% are non-subscribers.
 
-**Why?** This shows a large opportunity to convert existing customers into subscribers through better offers and benefits.
+This represents a potential opportunity to improve subscription conversion and retention.
 
----
+### 4. Discounts Can Support Higher-Value Purchases
 
-### 3. Young Adults Generate the Most Revenue
-
-Young Adults contribute approximately **$62K**, the highest among all age groups.
-
-**Why?** Their purchasing activity contributes more revenue compared with the other age groups.
-
----
-
-### 4. Discounts Can Encourage Higher Spending
-
-SQL analysis found customers who used discounts but still spent **above the average purchase amount**.
-
-**Why?** Well-targeted discounts can encourage customers to make higher-value purchases.
-
----
+The SQL analysis identifies customers who used discounts while still spending above the overall average purchase amount, providing a basis for evaluating targeted promotional strategies.
 
 ### 5. Customer Loyalty Can Be Segmented
 
-Customers were classified as **New, Returning, and Loyal** based on their previous purchases.
+Customers were classified as **New, Returning, and Loyal** using previous purchase behaviour.
 
-**Why?** This helps the business target each customer group with more relevant offers and engagement strategies.
-
----
-
-### 6. Product Ratings Show Customer Preferences
-
-The SQL analysis identified the **top-rated products** based on customer reviews.
-
-**Why?** Highly rated products can help identify products that customers value and respond positively to.
+This provides a foundation for differentiated retention and engagement strategies.
 
 ---
 
-# 📝 Report
+## 10. 💼 Business Recommendations
 
-A project report was created to document the analysis, findings, and business recommendations derived from the Python, SQL, and Power BI stages.
+### Increase Subscription Conversion
 
-> **Report:** `report/Customer_Shopping_Behaviour_Report.pdf`
+With only **27% of customers subscribed**, the business could test targeted subscription benefits for high-frequency and returning customers.
+
+### Protect High-Performing Categories
+
+Clothing contributes around **$100K** in revenue, so inventory planning, promotional investment, and product expansion should consider the category's strong performance.
+
+### Target Young Adult Customers
+
+Young Adults generate the highest revenue contribution at approximately **$62K**, making them a useful segment for targeted campaigns and product recommendations.
+
+### Use Discounts More Strategically
+
+Instead of broad discounting, the business could identify customers who are already capable of higher-value purchases and test personalized offers.
+
+### Personalize Retention Strategies
+
+New, returning, and loyal customers can be targeted differently based on their purchase history and engagement level.
+
+> These recommendations are proposed actions based on the observed project findings; they are not measured business outcomes.
 
 ---
 
-# 📁 Project Structure
+## 11. 🧠 Skills Demonstrated
+
+| Area | Skills |
+|---|---|
+| Python | Pandas, EDA, cleaning, feature engineering |
+| SQL | Aggregation, filtering, subqueries, CTEs, window functions |
+| PostgreSQL | Database loading and structured analysis |
+| Power BI | Dashboard development and interactive reporting |
+| DAX | Measures and calculated analysis |
+| Business Analytics | Customer segmentation, product analysis, recommendations |
+| Visualization | KPI reporting, category comparisons, interactive filters |
+
+---
+
+## 12. 📂 Project Files
+
+- `python/` — Python notebook and data preparation
+- `SQL/` — PostgreSQL/SQL analysis
+- `Power BI/` — Power BI dashboard
+- `data/` — Source/cleaned data
+- `images/` — Dashboard and analytical screenshots
+- `Business Problem Document (CSB).pdf` — Business problem documentation
+
+---
+
+## 13. 📁 Project Structure
 
 ```text
-Customer-Shopping-Behaviour-Analysis/
+Customer-Shopping-Behavior/
 │
+├── Power BI/
+├── SQL/
 ├── data/
-│   └── customer_shopping_behavior.csv
-│
-├── python/
-│   └── customer_shopping_behavior.ipynb
-│
-├── sql/
-│   └── customer_behavior_queries.sql
-│
-├── powerbi/
-│   └── Customer_Shopping_Behaviour.pbix
-│
-├── report/
-│   └── Customer_Shopping_Behaviour_Report.pdf
-│
 ├── images/
-│   ├── data_model.png
-│   ├── dataset_preview.png
-│   ├── data_cleaning.png
-│   ├── age_group_feature.png
-│   ├── purchase_frequency_feature.png
-│   ├── sql_analysis.png
-│   └── powerbi_dashboard.png
-│
+├── python/
+├── Business Problem Document (CSB).pdf
 └── README.md
 ```
 
 ---
 
-# ⚙️ How to Run
+## 14. 🎓 Key Takeaway
 
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/customer-shopping-behaviour-analysis.git
-cd customer-shopping-behaviour-analysis
-```
-
-## 2. Install Python Dependencies
-
-```bash
-pip install pandas sqlalchemy psycopg2-binary jupyter
-```
-
-## 3. Run the Python Notebook
-
-```bash
-jupyter notebook
-```
-
-Open the notebook in the `python` folder and run the cells to reproduce the data preparation, EDA, cleaning, and feature engineering steps.
-
-## 4. Run the SQL Analysis
-
-Set up a PostgreSQL database and load the cleaned dataset into the required table.
-
-Then execute the SQL queries in the `sql` folder.
-
-## 5. Open the Power BI Dashboard
-
-Open the `.pbix` file using **Power BI Desktop**.
-
-Update the database/data-source connection if required and refresh the model.
+This project demonstrates an end-to-end analytics workflow combining **Python, SQL, PostgreSQL, and Power BI** to move from raw customer data to business-oriented insights and recommendations.
 
 ---
 
-# 🧰 Tools & Technologies
-
-| Tool | Purpose |
-|---|---|
-| **Python** | Data preparation and analysis |
-| **Pandas** | Data manipulation and cleaning |
-| **PostgreSQL** | Database and SQL analysis |
-| **SQL** | Business-oriented data analysis |
-| **Power BI** | Dashboard and visualization |
-| **DAX** | Power BI calculations and measures |
-| **Jupyter Notebook** | Python analysis environment |
-
----
-
-# 🎓 Skills Demonstrated
-
-**Data Cleaning • Exploratory Data Analysis • Feature Engineering • SQL • PostgreSQL • Python • Pandas • Power BI • DAX • Data Visualization • Business Analysis**
-
----
-
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Adithya Ruby**
 
-Aspiring Data Analyst focused on transforming data into actionable business insights.
-
----
-
-## ⭐ Project Summary
-
-**An end-to-end customer analytics project demonstrating the complete journey from raw data to business insights using Python, SQL, and Power BI.**
+Computer Science Graduate | Data Analytics
